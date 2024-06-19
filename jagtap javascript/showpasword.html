@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 500px;
+            width: 560px;
+            border: 1px solid;
+           overflow: auto;
+           white-space: nowrap;
+        }
+        img{
+            height: 500px;
+            width: 500px;
+           
+        }
+    </style>
+</head>
+<body>
+    
+     password<input type="password" id="a" value="name">
+
+    <input type="checkbox" id="b" onclick="fun()">checkbox
+
+    <div class="parent">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/IMG-20190601-WA0004.jpg" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0O-3FQvMN9ADDziNxyFtyLLUngXcodVHAPzSc243VaEl95QZ5fq1Ma0mD6dpTasw6ApU&usqp=CAU" alt="">
+        <img src="https://sample-videos.com/img/Sample-jpg-image-10mb.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Nature_HD_pictures.jpg" alt="">
+        <img src="https://i.pinimg.com/474x/d6/78/78/d67878a55a491870071cc5afc73c06c4.jpg" alt="">
+    </div>
+    <script>
+        function fun(){
+           let a=document.getElementById("a");
+             if(a.type=='password')
+
+         {
+                 a.type='text'
+            }
+            else{
+                a.type='password';
+             }
+         }
+
+          
+            
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sub{
+            border: 1px solid;
+            height: 500px;
+            width: 500px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .head{
+            position: absolute;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="input">
+<button onclick="myfunction(input.value)">upload</button>
+<div class="sub" >
+    <img src="https://www.autobest.co.in/uploads/blog/366575132046.jpg" id="sub">
+   
+</div>
+<h1 id="head"  class="head">pooja</h1>
+<input type="text" id="text">
+<button onclick="mytext(text.value)">add</button>
+
+<script>
+    function myfunction(store) {
+        document.getElementById("sub").src=store;     
+    }
+</script>
+
+<script>
+    function mytext(store2) {
+        document.getElementById("head").innerHTML=store2;    
+    }
+</script>
+
+    
+</body>
+</html>

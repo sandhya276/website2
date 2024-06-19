@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+       
+        ul
+        {
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+        }
+        #web
+        {
+            height: 25px;
+            width: 140px;
+        }
+        .child
+        {
+            height: 80px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .child1
+        {
+            height: 500px;
+            width: 100%;
+            border: 1px solid black;
+        }  
+        .parent
+        {
+            height: 30px;
+            width: 300px;
+            border: 1px solid black;
+            margin-top: 20px;
+            background-color: rebeccapurple;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+        } 
+        .main
+        {
+          position: relative;
+          left:180px ;
+          bottom: 25px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="child">
+        <ul>
+            <li><img src="https://www.gstatic.com/devrel-devsite/prod/v18deffdce717053d2574d396ca1a06d6589d5eab7eb54fc25710e3ed98d4a3ba/web/images/lockup.svg" id="web"></li>
+            <li ><a href="#" class="a">About</a></li>
+            <li ><a href="#" class="a">blog</a></li>
+            <li ><a href="#" class="a">Articles</a></li>
+            <li ><a href="#" class="a">Learn</a></li>
+            <li ><a href="#" class="a">Explore</a></li>
+            <li ><a href="#" class="a">More</a></li>
+       
+
+                <input type="text" placeholder="Search" id="input1" onclick="myfunction4()">
+                <li><a href="#">sign in</a></li>
+        </ul>
+
+    </div>
+    <div class="child1" onclick="myfunction5()"></div>
+    <script>
+        function myfunction4() 
+        {
+            document.querySelector('#input1').style.width='1050px'; 
+            document.getElementsByClassName("a")[0].style.display="none";
+            document.getElementsByClassName("a")[1].style.display="none";
+            document.getElementsByClassName("a")[2].style.display="none";
+            document.getElementsByClassName("a")[3].style.display="none";
+            document.getElementsByClassName("a")[4].style.display="none";
+            document.getElementsByClassName("a")[5].style.display="none";
+
+        }
+    </script>
+    <script>
+        function myfunction5() 
+        {
+            document.querySelector('#input1').style.width="200px"; 
+            document.getElementsByClassName("a")[0].style.display="block";
+            document.getElementsByClassName("a")[1].style.display="block";
+            document.getElementsByClassName("a")[2].style.display="block";
+            document.getElementsByClassName("a")[3].style.display="block";
+            document.getElementsByClassName("a")[4].style.display="block";
+            document.getElementsByClassName("a")[5].style.display="block";   
+        }
+    </script>
+
+
+<div class="parent" onmouseover="myfun()" onmouseout="myfun1()" >
+    in
+
+</div>
+<div class="main" onmouseover="myfun()" onmouseout="myfun1()"></div>
+
+
+<script>
+    function myfun() 
+    {
+        document.querySelector(".parent").innerHTML="in";
+        document.querySelector('.main').innerText="share";
+        document.querySelector('.main').style.color="white";
+        document.querySelector('.main').style.fontSize="20px";
+        document.querySelector(".parent").style.width="330px"
+    }
+    function myfun1(params) 
+    {
+        document.querySelector(".parent").innerHTML="in";   
+        document.querySelector('.main').innerHTML=" ";
+        document.querySelector('.parent').style.width="300px" 
+    }
+   
+</script>
+
+
+
+</body>
+</html>

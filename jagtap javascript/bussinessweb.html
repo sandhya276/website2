@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: auto;
+            border: 1px solid;
+        }
+        header{
+            height: 50px;
+            background-color:rgba(240, 241, 242);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;  
+            margin: 10px;   
+            position: sticky;
+            top: 0px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 26px;
+            color: black;
+        }
+        .slider{
+           width: 1100px;
+            height: 600px;
+            margin: auto;
+        }
+        .bar{
+            width: 1100px;
+            height: 60px;
+            margin: auto;
+            display: flex;
+            background-color: rgb(201, 192, 192);
+        }
+        .a,.c{
+            height: 60px;
+            width: 300px;
+        }
+        .b{
+            height: 60px;
+            width: 600px;
+        }
+        #leftArrow{
+            width: 50px;
+            height: 50px;
+            padding: 4px;
+        }
+        #rightArrow{
+            width: 53px;
+            height: 53px;
+          float: right;
+          padding: 10px;
+        }
+        .b{
+            display: flex;
+            column-gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        .small{
+            border: 1px solid;
+            height: 20px;
+            width: 20px;
+        }
+        .office{
+            width: 100%;
+            height: 100%;
+        }
+        #s1{
+            background-color: black;
+
+        }
+        .offer
+        {
+            width: 1100px;
+            height: 80px;
+            margin: auto;
+            text-align: center;
+            padding-left: 400px;
+        }
+        h1{
+            border-bottom: 5px solid rgb(105, 102, 102) ;
+            max-width: 300px;      
+        }
+         .design
+        {
+            width: 1100px;
+            height: 200px;
+            margin: auto;
+            display: flex;
+        }
+        .aa{
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+        }
+        .a1{
+            background-color:rgb(236, 239, 241);
+        }
+        .a2{
+            background-color:rgb(182, 185, 187);
+        }
+        .a3{
+            background-color:rgb(106, 108, 109);
+            color: white;
+        }
+        .a4{
+            background-color:black;
+            color: white;
+        }
+        #p{
+            font-size: 22px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        .plans{
+            width: 1100px;
+            height: 120px;
+            margin: auto;
+            text-align: center;
+        }
+        .three{
+            display: flex;
+            width: 1100px;
+            height: 500px;
+            margin: auto;
+            column-gap: 40px;
+        }
+        .most{
+            width: 340px;
+            height: 490px;
+            line-height: 1.5cm;
+            text-align: center;
+        }
+        .most:hover{
+            box-shadow: 0px 0px 10px black;
+        }
+        .not1{
+            width: 100%;
+            height: 65px;
+            background-color: rgb(135, 129, 129);
+        }
+        .not{
+            width: 100%;
+            height: 65px;
+            background-color: rgb(209, 212, 214);
+        }
+        .p{
+            font-size: 25px;
+        }
+        .p1{
+            font-size: 35px;
+        }
+        .b1{
+            background-color: rgb(20, 142, 33);
+            font-size: 19px;
+            width: 100px;
+            height: 40px;
+            border: none;
+            color: white;
+        }
+        .n1{
+            background-color: black;
+            color: white;
+        }
+        .n2{
+            background-color: grey;
+        }
+        .mos{
+            width: 350px;
+            height: 420px;
+        
+            padding: 10px;
+            box-shadow: 0px 0px 10px  grey;
+            
+        }
+        .contact{
+            background-color: rgb(227, 220, 220);
+            font-size: 19px;
+            width: 330px;
+            height: 40px;
+            border: none;
+            color: black;
+        }
+        .contact:hover{
+            background-color: gray;
+        }
+        .girl{
+            width: 100%;
+            height: 200px;
+        }
+        .some{
+            font-size: 17px;
+
+        }
+        .grey{
+            font-size: 19px;
+            color: grey;
+        }
+
+         
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <a href="#slider">Home</a>
+            <a href="#">Plan</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </header>
+
+
+        <div class="slider" id="slider">
+            <img src="https://watermark.lovepik.com/photo/20211201/large/lovepik-business-team-office-talking-about-work-picture_501327053.jpg" alt="" id="officeimg" class="office">
+            <img src="https://cdn.autonomous.ai/static/upload/images/new_post/13-effective-office-design-ideas-for-small-business-1461-1616870082564.jpg" alt="" id="officeimg1" class="office" style="display: none;"> 
+            <img src="https://media.gettyimages.com/id/1359662582/photo/group-of-happy-college-student-stock-photo.jpg?s=170667a&w=gi&k=20&c=CpWlBVxMtkfyVV7ZtRURe5jQ4tiHNM4UA9f0t2ZjkdM=" alt="" class="office" id="officeimg2"  style="display: none;">
+        </div>
+
+
+        <div class="bar">
+            <div class="a">
+           <img src="https://icons.veryicon.com/png/o/miscellaneous/small-face-icon/left-arrow-28.png" alt="" id="leftArrow" onclick="reverse()">
+            </div>
+
+            <div class="b">
+                <div class="small" id="s1"></div>
+                <div class="small" id="s2"></div>
+            </div>
+
+            <div class="c">
+                <img src="https://cdn-icons-png.freepik.com/512/1/1122.png" alt="" id="rightArrow" onclick="sidechange()">
+            </div>
+        </div>
+<br><br><br>
+        <div class="offer">
+            <h1>What We Offer</h1>
+        </div><br><br>
+
+        <div class="design">
+             <div class="a1 aa">
+                <h2>Design</h2><br><br>
+                <p id="p">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+             </div>
+            <div class="a2 aa">
+                <h2>Branding</h2><br><br>
+                <p id="p">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
+            <div class="a3 aa">
+
+                <h2>Consultation</h2><br><br>
+                <p id="p">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
+            <div class="a4 aa">
+                <h2>Promises</h2><br><br>
+                <p id="p">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
+        </div><br><br><br>
+        <div class="plans">
+            <h2>Pricing Plans</h2><br>
+            <p id="p">Choose a pricing plan that fits your needs.</p>
+        </div><br><br>
+        <div class="three">
+            <div class="most">
+                <div class="not1">
+                    <h2 class="short">Pro</h2>
+                </div>
+               
+                <p class="p"><b>25 GB</b> storage</p><hr>
+                <p class="p"><b>25</b>Emails</p><hr>
+                <p class="p"><b>25</b>Domains</p><hr>
+                <p class="p"><b>Endless</b>support</p><hr>
+                <p class="p1"><b>$ 25</b></p>
+                <p class="p">per month</p><hr>
+               <div class="not">
+                <button class="b1">Sign up</button>
+               </div>
+            </div>
+            <div class="most">
+                <div class="not1 n2">
+                    <h2 class="short">Basic</h2>
+                </div>
+               
+                <p class="p"><b>10 GB</b> storage</p><hr>
+                <p class="p"><b>10</b>Emails</p><hr>
+                <p class="p"><b>10</b>Domains</p><hr>
+                <p class="p"><b>Endless</b>support</p><hr>
+                <p class="p1"><b>$ 10</b></p>
+                <p class="p">per month</p><hr>
+               <div class="not">
+                <button class="b1">Sign up</button>
+               </div>
+            </div>
+            <div class="most">
+                <div class="not1 n1">
+                    <h2 class="short">Preminum</h2>
+                </div>
+               
+                <p class="p"><b>50 GB</b> storage</p><hr>
+                <p class="p"><b>50</b>Emails</p><hr>
+                <p class="p"><b>50</b>Domains</p><hr>
+                <p class="p"><b>Endless</b>support</p><hr>
+                <p class="p1"><b>$ 50</b></p>
+                <p class="p">per month</p><hr>
+               <div class="not">
+                <button class="b1">Sign up</button>
+               </div>
+            </div>
+        </div><br><br>
+        <div class="offer">
+            <h1>Who We Are</h1>
+        </div><br><br>
+
+        <div class="three">
+            <div class="mos">
+                <img src="https://www.shutterstock.com/image-photo/young-pretty-woman-student-using-260nw-2228645299.jpg" alt="" class="girl">
+                <h2 id="short">Jane Doe</h2><br>
+               <p class="grey">CEO & Founder</p>
+                <p class="some">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p><br>
+                <button class="contact">Contact</button>
+            </div>
+            <div class="mos">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="" class="girl">
+                <h2 id="short">Mike Ross</h2><br>
+               <p class="grey">Art Derector</p>
+                <p class="some">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p><br>
+                <button class="contact">Contact</button>
+            </div>
+            <div class="mos">
+                <img src="https://www.stylecraze.com/wp-content/uploads/2017/07/Market-Analysis-And-Strategy.jpg" alt="" class="girl">
+                <h2 id="short">Min Royal</h2><br>
+               <p class="grey">Designer</p>
+                <p class="some">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p><br>
+                <button class="contact">Contact</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function sidechange(params) {
+            document.getElementById("officeimg").style.display="none";
+            document.getElementById("officeimg1").style.display="block";       
+            document.getElementById("s2").style.background="black";       
+            document.getElementById("s1").style.background="white";       
+        }
+
+        function reverse(params) {
+
+            document.getElementById("officeimg1").style.display="none";
+            document.getElementById("officeimg").style.display="block";
+            document.getElementById("s1").style.background="black";       
+            document.getElementById("s2").style.background="white";       
+
+        }
+    </script>
+    
+</body>
+</html>

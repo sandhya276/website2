@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio&family=Monoton&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/33042e1aad.js" crossorigin="anonymous"></script>
+
+   <style>
+    .main{
+        height: 500px;
+        width: 550px;
+        border: 1px solid;
+        margin: auto;
+    }
+    .parent{
+        height: 100px;
+        width: 550px;
+        border: 1px solid;
+    }
+    .child{
+        height: 400px;
+        width: 550px;
+        border: 1px solid;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b5/IMG-20190601-WA0004.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+  </style> 
+</head>
+<body>
+    
+     <div class="main">
+        <div class="parent" >
+            <i class="fa-regular fa-copy" onclick="myfun()" id="on"></i>
+            <i class="fa-solid fa-check" style="display: none;" id="off" onclick="myfun1()"></i>
+
+        </div>
+        <div class="child">
+            <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+         let a=setTimeout(myfun1,2000);
+        function myfun(){
+        document.getElementById('on').style.display='none';
+        document.getElementById('off').style.display='block';
+
+        }
+       
+        function myfun1(){
+            document.getElementById('on').style.display='block';
+            document.getElementById('off').style.display='none'
+        }
+    </script>
+
+
+
+
+</body>
+</html>

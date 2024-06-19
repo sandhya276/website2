@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .parent{
+            height: 600px;
+            width: 600px;
+            border: 1px solid;
+            background-image: url(https://i.pinimg.com/236x/01/96/d9/0196d9cfa158ed80bb769dad068ca9d9.jpg);
+        background-size: cover;
+        margin: auto;
+       
+        }
+        .class{
+            height: 600px;
+            width: 100%;
+            border: 1px solid;
+            display: none;
+            
+            
+        }
+        .s1{
+            background-image: url(https://plus.unsplash.com/premium_photo-1661626990407-015f6852c554?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y3V0ZSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D);
+           
+            background-size: cover;
+        }
+        .s2{
+            background-image: url(https://kiwinurseries.com/wp-content/uploads/2019/06/Emily-Carr-Rose-2-e1589906187228.jpg);
+            background-size: cover;
+           
+        }
+        .s3{
+            background-image: url(https://www.iamsterdam.com/_next/image?url=https%3A%2F%2Fapp.thefeedfactory.nl%2Fapi%2Fassets%2F64ee0766678e2d7f2ac8ad41%2Fflevopark_4_.jpg&w=1080&q=75);
+            
+            background-size: cover;
+        }
+        .s4{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT97yLDL4KKKy7mMthCYP01h8ph0BLW6_P6wyHh-lowKw&s);
+            background-size: cover;
+          
+        }
+        .parent1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+           
+            height: 100px;
+            width: 600px;
+            border: 1px solid;
+
+            background-color: rgba(0,0,0,0.3);
+            display: flex;
+            column-gap: 15px;
+        }
+        button{
+            height: 60px;
+            width: 60px;
+            border: 1px solid;
+          
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="min">
+  <div class="parent">
+    <div id="a" class="class s1"></div>
+    <div id="b" class="class s2"></div>
+    <div id="c" class="class s3"></div>
+    <div id="d" class="class s4"></div>
+</div>
+      
+<div class="parent1">
+    <button onclick="myfun()">1</button>
+    <button onclick="myfun1()">2</button>
+    <button onclick="myfun2()">3</button>
+    <button onclick="myfun3()">4</button>
+
+</div>
+</div>
+<script>
+    function myfun()
+    {
+      document.getElementById("a").style.display="block";
+      document.getElementById("b").style.display="none";
+      document.getElementById("c").style.display="none";
+      document.getElementById("d").style.display="none";
+
+   
+
+    }
+    function myfun1()
+    {
+        document.getElementById("a").style.display="none";
+      document.getElementById("b").style.display="block";
+      document.getElementById("c").style.display="none";
+      document.getElementById("d").style.display="none";
+
+
+    }
+    function myfun2()
+    {
+        document.getElementById("a").style.display="none";
+      document.getElementById("b").style.display="none";
+      document.getElementById("c").style.display="block";
+      document.getElementById("d").style.display="none";
+
+
+    }
+    function myfun3()
+    {
+        document.getElementById("a").style.display="none";
+      document.getElementById("b").style.display="none";
+      document.getElementById("c").style.display="none";
+      document.getElementById("d").style.display="block";
+
+
+    }
+</script>
+
+    
+</body>
+</html>

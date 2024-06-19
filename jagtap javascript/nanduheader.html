@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <link href="https://fonts.googleapis.com/css2?family=Antonio&family=Monoton&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/33042e1aad.js" crossorigin="anonymous"></script>
+   <style>
+       .parent-container{
+          width: 100%;
+          height: 500px;
+         overflow: hidden;
+         background-color: lightblue;
+       display: flex;
+       }.anchor-section{
+        width: 200px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-left: -200px;
+        transition: 1s;
+        display: flex;
+        justify-content: space-between;
+       }.anchor{
+           height: 100%;
+           width: 200px;
+        display: flex;
+       flex-direction: column;
+      justify-content: space-evenly;
+       }.icon{
+           height: 40px; 
+       }a{
+           color: white;
+          font-size: larger;
+          text-decoration: none;
+          font-family: sans-serif;
+       }
+   </style>
+</head>
+<body>
+   <div class="parent-container">
+   <div class="anchor-section" id="nandu">
+      <div class="anchor">
+         <a href="">HOME</a>
+         <a href="">ABOUT</a>
+         <a href="">CONTACTS</a>
+         <a href="">FORMS</a>
+         <a href="">ADDMITION</a>
+      </div>
+      <div class="icon">
+       <i onclick="anchor1()" id="icon2" class="fa-solid fa-xmark fa-2x"></i>
+      </div>
+   </div>
+   <i onclick="anchor()" id="icon" class="fa-solid fa-bars fa-3x"></i>
+   </div>
+</body>
+</html>
+<script>
+   function anchor(){
+       document.getElementById("nandu").style.marginLeft='0px';
+       document.getElementById("icon").style.display='none';
+       document.getElementById("icon2").style.display='block';
+
+   }    function anchor1(){
+       document.getElementById("nandu").style.marginLeft='-200px';
+       document.getElementById("icon").style.display='block';
+       document.getElementById("icon2").style.display='none';
+   
+   }
+</script>

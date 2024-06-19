@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .child{
+            height: 600px;
+            width: 600px;
+            border: 1px solid;
+        }
+        img{
+            height: 600px;
+            width: 600px;
+        } 
+   
+        .parent{
+            height: 500px;
+            width: 600px;
+            border: 1px solid;
+            display: flex;
+        }
+      .ok{
+        height: 500px;
+        width: 80px;
+        border: 1px solid;
+      }
+
+      
+    </style>
+</head>
+<body>
+  
+  
+      <div class="parent">
+            <div class="ok" id="e" ></div>
+            <textarea cols="30" rows="50" oninput="myfun(this.value)"></textarea>
+      </div> 
+     
+ <div class="child">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/IMG-20190601-WA0004.jpg" id="img">
+    </div>
+    <button onclick="myfun()">zoom in</button>
+    <button onclick="myfunction()">zoom out</button> 
+
+    <script>
+       let a=document.getElementById("img")
+
+       function myfun(params) {
+           let  ab=a.clientHeight;
+           let m=a.clientWidth;
+             a.style.height=(ab+50)+'px';
+           a.style.width=(m+50)+'px';
+         }
+         function myfunction(params) {
+            ab=a.clientHeight
+            m=a.clientWidth
+             a.style.height=(ab-50)+'px';
+           a.style.width=(m-50)+'px';
+         }
+      
+//  let z=document.getElementById('e')
+//    function myfun(s){
+//           let t=s.split('\n').length
+//        z.innerText=' '
+//          for(let i=1;i<t;i++)
+//         {
+//             let h=document.createElement("li")
+//             h.innerText=i;
+//           z.appendChild(h);
+//           }
+//   }
+   
+    </script>
+</body>
+</html>

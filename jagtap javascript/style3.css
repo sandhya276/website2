@@ -1,0 +1,439 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+    height: auto;
+    width: 100%;
+   
+    
+}
+.parent{
+ 
+    width: 1250px;
+    height: 120px;
+    background-color: #EEF7FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 15px;
+    background-color: rgb(169, 215, 215);
+}
+.img1{
+    height: 80px;
+    width: 2050px;
+   
+  
+
+}
+.img2{
+    height: 90px;
+    width: 100px;
+    display: flex;
+   
+  
+   
+}
+.img3{
+    height: 90px;
+    width: 150px;
+   
+    
+
+}
+.ico{
+    border: 1px solid grey;
+   width: 90px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  margin: 10px;
+  border: 1px solid black;
+
+}
+.railwaymain{
+    height: auto;
+    width: 1250px;
+    margin-top: 10px;
+
+}
+.railway{
+    height: 700px;
+    width: 1250px;
+    margin-left: 15px;
+   
+    background-image: url(https://static.india.com/wp-content/uploads/2024/04/Untitled-6.png?impolicy=Medium_Widthonly&w=500);
+ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.form{
+    margin-top: 50px;
+    height: 500px;
+    width: 600px;
+   
+   margin-left: 30px;
+   
+    background-color: white;
+}
+.form1{
+    height: 500px;
+    width: 600px;
+   
+    margin-top: 15px;
+   ;
+}
+.pnr{
+    border: 1px solid;
+    width: 312px;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 15px;
+    background-color: rgb(54, 54, 145);
+    color: white;
+}
+.charts{
+    border: 1px solid;
+    width: 312px;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 15px;
+    background-color: rgb(54, 54, 145);
+    color: white;
+}
+.space{
+    padding-left: 25px;
+}
+.row{
+    position: relative;
+    left: 350px;
+    top: 1px;
+    color: rgb(67, 67, 144);
+   
+}
+#book{
+    border: 1px solid;
+    color: rgb(43, 43, 125);
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+    height: 80px;
+    width: 625px;
+}
+.form3{
+    width: 450px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+flex-wrap: wrap;
+align-content: flex-start;
+gap: 30px;
+}
+.s{
+    border: 1px solid;
+    width: 230px;
+    height: 40px;
+   
+}
+.i2{
+   
+    width: 190px;
+    height: 40px;
+    padding: 1px;
+    font-size: 1px;
+    padding-left: 5px;
+}
+::placeholder{
+    color: rgb(78, 78, 186);
+   
+}
+#check{
+    width: 30px;
+    height: 20px;
+}
+.checkbox{
+    width: 450px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+  flex-wrap: wrap;
+   align-content: flex-start;
+  color:rgb(42, 42, 156);
+  font-size: 17px;
+  
+}
+.search{
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border: none;
+   
+}
+.try{
+    background-color: rgb(44, 143, 44);
+    width: 250px;
+    height: 40px;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+   
+    margin-left: 100px;
+}
+.last{
+    width: 600px;
+    height: 80px;
+    margin: auto;
+  font-size: 19px;
+  background-color: white;
+  margin-top: 160px;
+ 
+  text-align: center;
+  
+  color: rgb(53, 105, 201);
+
+}
+input{
+    border: none;
+    font-size: 16px;
+    padding-left: 5px;
+    color: rgb(78, 78, 186);
+    
+}
+select{
+    height: 17px;
+    width: 130px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+
+    padding: 1px;
+    color: rgb(78, 78, 186);
+ }
+ .heding{
+    float:right;
+    padding: 40px;
+    font-size: 50px ;
+    color: rgb(23, 23, 86);
+    font-weight: bold;
+
+}
+.three{
+    font-size: 28px;
+    position: relative;
+    top: -28px;
+    right: 90px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    color: rgb(23, 23, 86);
+    
+}
+.src{
+    height: 100px;
+    width: 1250px;
+   
+    
+  
+    
+}
+#img{
+    height: 100px;
+    width: 1000px;
+
+   padding-left: 180px;
+   
+}
+#src{
+     height: 220px;
+     width: 1250px;
+     
+}
+#img2{
+    height: 220px;
+    width: 1000px;
+    padding-left: 180px;
+    
+}
+.hedlien{
+    height: 200px;
+    width: 1250px;
+   
+}
+.not{
+    height: 100px;
+    width: 900px;
+    padding-left: 300px;
+    padding-top: 30px;
+    font-size: 39px;
+    
+}
+.icon{
+    height: 550px;
+    width: 1250px;
+  
+   
+  
+    
+    padding-left: 130px;
+    
+}
+.fa{
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+  border-radius: 90px;
+    margin-left: 20px;
+    
+}
+.a{
+    height: 200px;
+    width: 1250px;
+  
+    
+    column-gap: 40px;
+  
+    display: flex;
+}
+.p{
+    height: 170px;
+    width: 200px;
+
+  
+
+ 
+}
+h3{
+    padding-left: 20px;
+
+}
+.bus{
+    padding-left: 50px;
+
+}
+#a{
+    height: 150px;
+    width: 1080px; 
+}
+.video{
+    height: 300px;
+    width: 380px;
+   
+    margin-left: 450px;
+    background-color: antiquewhite;
+
+}
+.vid{
+    margin-top: 5px;
+    height: 250px;
+    width: 300px;
+    margin-left: 40px;
+
+}
+#h{
+    height: 100px;
+    width: 200px;
+
+margin: auto;
+margin-top: 30px;
+}
+.suman{
+    height: 650px;
+    width: 1250px;
+   
+    display: flex;
+   margin-left: 50px;
+   column-gap: 20px;
+
+}
+.c{
+    height: 600px;
+    width: 400px;
+   
+    background-color: white;
+ 
+}
+.n{
+    font-size: 26;
+    text-align: center;
+}
+.m{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.t{
+    height: 220px;
+    width: 400px;
+}
+.k{
+    margin-top: 25px;
+}
+.sun{
+    height: 80px;
+
+    border: 1px solid;
+    margin-left: 30px;
+   
+}
+.sa{
+    height: 80px;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+ 
+}
+.alt{
+    height: 70px;
+    width: 70px;
+   color: white;
+ 
+}
+
+
+.fd{
+    height: 300px;
+    
+    margin-left: 30px;
+    background-color: darkslateblue;
+    display: flex;
+    margin-left: 30px;
+}
+.f{
+    height: 300px;
+    width: 300px;
+  margin-left: 30px;
+    
+}
+.sel{
+    height: 40px;
+    width: 200px;
+
+    background-color: darkslateblue;
+    color: white;
+    row-gap: 25px;
+}
+.l{
+    height: 100px;
+    width: 1250px;
+    border: 1px solid black;
+    margin-top: -2px;
+    margin-left: 30px;
+   
+  
+}
+.am{
+    margin-left: 20px;
+ height: 100px;
+ width: 1200px;
+}

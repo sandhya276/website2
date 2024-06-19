@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+       table,tr,td{
+        border: 1px solid;
+       }
+      
+    </style>
+</head>
+<body>
+    
+  <form action="">
+    Name : <input type="text" id="a"> <br>
+
+    lName : <input type="text" id="b">
+   <br>
+    passwrod : <input type="password" id="c"><br>
+
+    email : <input type="email" id="p"><br>
+    <input type="reset">
+    
+</form>
+<input type="submit" onclick="myfun(a.value,b.value,c.value)">
+
+  <script>
+    let table=document.createElement('table')
+    document.body.appendChild(table);
+    function myfun(a,b,c){
+
+            let tr=document.createElement('tr')
+            table.appendChild(tr)
+
+            let arry=[a,b,c]
+            for(let i=0;i<arry.length;i++)
+            {
+                let td=document.createElement('td')
+                td.innerText=arry[i]
+                tr.appendChild(td)
+            }
+               let but=document.createElement('button')
+             but.innerText='remove'
+              tr.appendChild(but)
+
+              but.addEventListener('click',()=>{
+               document.getElementsByTagName('tr')[0].remove();
+
+
+              })
+    }
+  </script> 
+       
+     
+</body>
+</html>

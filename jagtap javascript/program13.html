@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+          box-sizing: border-box;
+        }
+        .main{
+            height: auto;
+            width: 97%;
+            border: 1px solid;
+            margin: auto;
+           
+
+        }
+        .main1{
+            height: 130px;
+           
+            border: 1px solid;
+            display: flex;
+           
+           margin: auto;
+          
+        }
+        .img1{
+            display: flex;
+            align-items: center;
+            margin-left: 150px;
+        column-gap: 30px;
+        font-size: 25px;
+        
+        }
+        .pageimg{
+            background-image: url(https://aicence.com/all-images/index-ban4.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 620px;
+            width: 100%;
+            
+        }
+        #h1{
+            color: white;
+            font-size: 70px;
+         padding-top:150px;
+            text-align: center;
+            height: 230px;
+            border: 1px solid;
+            
+           
+        }
+        .a{
+            text-align: center;
+            font-size: 30px;
+            height: 300px;
+            padding-top: 30px;
+        }
+        .Services{
+           
+            height: 250px;
+            border: 1px solid;
+            font-size: 30px;
+           background-color: rgb(190, 195, 199);
+        }
+        .data{
+            height: 400px;
+            display: flex;
+            height: 250px;
+           
+            
+        }
+       .main2{
+            width: 33%;
+            border: 1px solid;
+            height: 250px;
+          
+
+        }
+         .busines{
+            width: 33%;
+            border: 1px solid;
+            height: 250px;
+         }
+         .Cloud{
+            width: 33%;
+            border: 1px solid;
+            height: 250px;
+    
+         }
+         
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="parent">
+            <div class="main1">
+                <div class="img">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFdy44iI_RvMGf2VAbiieAm6wLCul3ThlbztSydNgs0Cju_WK9" alt="">
+            </div>
+
+           <div class="img1">
+            <a href="">Home</a>
+            <a href="https://aicence.com/about_us.html"> About Us</a>
+            <a href="https://aicence.com/services.html"> Services</a>
+            <a href="https://aicence.com/case_studies.html">Case Studies </a>
+            <a href="https://aicence.com/careers.html">Careers</a>
+            <a href="https://aicence.com/contact.html">Contact Us</a>
+           </div>
+            </div>
+            <div class="pageimg">
+               
+                <h1 id="h1">Unlock the power of technology with <br>
+                    our innovative solutions,and transform <br>
+                      your business today!</h1>
+            </div>
+
+            <div class="a">
+                <h1>What We Do</h1>
+                <p>
+                    We combine innovative technology solutions with personalized expertise to empower businesses with seamless digital transformations, drive efficiency, and unlock growth opportunities.</p>
+            </div>
+            <div id="ser">
+            <div class="Services">
+
+                <h1 class="ser">Featured Services</h1>
+                <p>We offer a wide range of cutting-edge IT solutions to meet the diverse needs of our clients. Our mission is to deliver innovative and reliable solutions that enable our clients to enhance their business performance and achieve their goals. We specialize in a range of services catering to businesses of all sizes and types. Our featured services include:</p>
+           
+
+            </div>
+
+            <div class="data">
+               
+                <div class="main2" onclick="fun1()">
+                   
+                <h1>Data Aanlyict</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum magnam libero non laboriosam modi mollitia consectetur, facere exercitationem unde nam aliquid ex, hic culpa eius cum voluptas alias! Illum, iusto?</p>
+
+            </div>
+
+          
+
+            <div class="busines" onclick="fun2()">
+                <h1>busines </h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores id est cumque inventore qui magnam ratione, quasi quo error? Sit et ut saepe atque magnam, error facere minima in veritatis!</p>
+
+            </div>
+            <div class="Cloud" onclick="fun3()">
+                <h1>Cloud</h1>
+                <p>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam inventore provident aliquid fugiat quos in. Vero dicta, beatae illum dignissimos quo error fugiat corrupti aliquam vel perspiciatis molestiae perferendis esse?</p>
+              
+            </div>
+            </div>
+            </div>
+              
+           
+
+        </div>
+    </div>
+       
+    <script>
+
+        function fun1(){
+            document.getElementById('main2').style.display="red";
+            document.getElementById('main2').style.display="all 0.3px";
+            document.getElementById('busines').style.display='grey' 
+            document.getElementById('Cloud').style.display='grey' 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <textarea id="a" oninput="fun(a.value)"></textarea>
+     <ul>
+        <li id="b">charset</li>
+        <li id="c">words</li>
+        <li id="d">line</li>
+     </ul>
+    <script>
+     function   fun(){
+            let a=document.getElementById('a').value
+
+            document.getElementById('b').innerText=`${a.length}`
+
+            let f=a.split(" ")
+
+            let g=f.length;
+            document.getElementById('c').innerText=`${g}`;
+
+            let j=a.split("\n");
+            let g1=j.length
+            document.getElementById('d').innerText=`${g1}`
+        };
+    </script>
+</body>
+</html>

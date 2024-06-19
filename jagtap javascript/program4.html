@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         #m{
+            height: 600px;
+            width: 600px;
+            border: 1px solid;
+            margin: auto;
+            overflow: hidden;
+           position: relative;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        #p{
+            height: 600px;
+            width: 600px;
+            border: 1px solid;
+            left: -600px;
+            position: absolute;
+            top: 0px;
+       background-color: deeppink;
+     transition: 4s;
+
+        }
+        #m:hover #p{
+            left: 0px;
+        }
+ 
+
+    </style>
+</head>
+<body>
+    
+   
+    <div id="m">
+        <img src="https://media.istockphoto.com/id/1026205392/photo/beautiful-luxury-home-exterior-at-twilight.jpg?s=612x612&w=0&k=20&c=HOCqYY0noIVxnp5uQf1MJJEVpsH_d4WtVQ6-OwVoeDo=" alt="">
+
+        <div id="p"></div>
+
+
+    </div>
+
+   
+
+</body>
+</html>

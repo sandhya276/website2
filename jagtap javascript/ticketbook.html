@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio&family=Monoton&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/33042e1aad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ticketstyle.css"> 
+</head>
+<body  id="body">
+ 
+    <div class="main">
+        <header>
+            <div class="ic1">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIRLcjpYUa6YAqKEn_jhpWmZ_mm3f4O-qzTsovy1wVQcQLaBv_" alt="" class="im">
+            </div>
+            <div class="ic2">
+                <img src="https://www.irctc.co.in/nget/assets/images/logo.png" alt="" class="im1">
+                <div class="icon">
+                    <i class="fa-solid fa-bars fa-2x" style="color:grey" onclick="opennow()"></i>
+                </div>
+            </div>
+        </header>
+        <!-- sidenavbar -->
+        <div class="sidenavbar" id="sidenavbar">
+            <div class="login">
+                <button class="btnlog">Login</button>
+                <p id="demo"></p>
+            </div>
+            <div class="realheader">
+                <button class="btnlog b">IRCTC EXCLUSIVE</button>
+                <ul>
+                    <li><a href="#">TRAINS</a></li>
+                    <li><a href="#">BUSES</a></li>
+                    <li><a href="#">FLIGHTS</a></li>
+                    <li><a href="#">HOLIDAYS</a></li>
+                    <li><a href="#">LOYALITY</a></li>
+                    <li><a href="#">MEALS</a></li>
+                    <li><a href="#">PROMOTIONS</a></li>
+                    <li><a href="#">ALERTS</a></li>
+                    <li><a href="#">MORE</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">AGENT LOGIN</a></li>
+                    <li><span style="color: red;">DAILY DEALS</span>
+                    <P>हिंदी</P></li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+setInterval(myTimer, 100);
+function myTimer() {
+  const d = new Date();
+  const day=d.getDate();
+  const month=d.toLocaleString('default',{month:'long'});
+  const year=d.getFullYear();
+  document.getElementById("demo").innerHTML = `${day}-${month}-${year}`+"[" + d.toLocaleTimeString() + "]";
+}
+
+function opennow(params) {
+
+    document.getElementById('sidenavbar').style.width="300px"
+}
+function cloasenow(params) {
+    document.getElementById('sidenavbar').style.width="0px"
+    
+}
+
+
+        </script>
+
+        
+        <img src="https://static.vecteezy.com/system/resources/previews/026/306/577/original/up-and-down-arrow-icon-upload-download-network-server-connection-direction-navigation-black-white-sign-symbol-artwork-graphic-clipart-eps-vector.jpg" alt="" id="updown">
+
+        <div class="railwayimg" onclick="cloasenow()">
+            <div class="adjust">
+            <div class="form">
+                <table>
+                    <tr>
+                        <td class="td"><i class="fa-solid fa-clipboard-check" class="fomicon"></i> <span class="space">PNR STATUS</span></td>
+                        <td  class="td"><i class="fa-solid fa-clipboard-list" class="fomicon"></i><span class="space">CHARTS/VACANCY</span></td>
+                    </tr>
+                    <tr>
+                        <td id="book" colspan="2">BOOK TICKET</td>
+                    </tr>   
+                </table>
+                <br><br>
+                <span class="row" >DD/MM/YYYY*</span>
+                <div class="grid">
+                    <div class="i1 s"><i class="fa-solid fa-paper-plane"></i><input type="text" placeholder="From"></div>
+                    <div class="i2 s"><i class="fa-solid fa-calendar-days"></i>
+                    <input type="date" ></div>
+                    <div class="i3 s"><i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="To"></div>
+                    <div class="i2 s"><i class="fa-solid fa-briefcase"></i>
+                        <select name="" id="">
+                            <option value="">All Classes</option>
+                            <option value="">Anubhuti Class (EA)</option>
+                            <option value="">AC First Class (1A)</option>
+                            <option value="">Vistadome AC (EV)</option>
+                            <option value="">Exec. Chair Car (EC)</option>
+                            <option value="">AC 3 Economy (3E)</option>
+                            <option value="">Vistadome Non AC (VS)</option>
+                           </select></div>
+                    <div class="i5 s"><i class="fa-solid fa-grip"></i>
+                   <select name="" id="">
+                    <option value="">GENERAL</option>
+                    <option value="">LADIES</option>
+                    <option value="">PERSON WITH DISABILITY</option>
+                    <option value="">LOWER BERTH/SR.CITIZEN</option>
+                    <option value="">DUTY PASS</option>
+                    <option value="">TATKAL</option>
+                   </select></div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="check">Person With Disability Concession &nbsp;&nbsp;
+                    <input type="checkbox" id="check">Flexible With Date
+                    <input type="checkbox" id="check">&nbsp;Train with Available Berth&nbsp;&nbsp;
+                    <input type="checkbox" id="check">Railway Pass Concession
+                </div>
+                <div class="search1">
+                    <button class="search">Search</button>
+                    <button class="try">Try booking in Ask DISHA 2.0</button>
+                </div>
+               
+            </div>
+            <div class="last">
+                Please click here for Empanelment for PAD items for Catering.
+            </div>
+        </div>
+            <div class="all">
+                <h1 id="heding"> INDIA RAILWAYS</h1>
+                <div class="three">
+                    <span class="span">Safety |&nbsp;</span>
+                    <span class="span">Security | &nbsp;</span>
+                    <span class="span">Punctulity</span>
+                </div>
+            </div>
+        </div>
+        <div class="div"><img src="https://tpc.googlesyndication.com/simgad/10166517062372720852" alt=""></div>
+        <div class="div div1"><img src="https://tpc.googlesyndication.com/simgad/18124990900664948743" alt=""></div>
+
+        <div class="main2">
+            <div class="headder"><h1>Have you not found the right one?<br>
+                Find a service suitable for you here.</h1></div>
+                <br><br><br>
+                <div class="griding">
+                    <div class="m1">
+
+                    
+                    <figure>
+                      <div class="dd"><i class="fa-solid fa-plane"></i></div>  
+                        <figcaption><b>  FLIGTHS</b></figcaption>
+                      </figure>
+                      <figure>
+                        <div class="dd"><i class="fa-solid fa-house"></i></div>  
+                          <figcaption><b>HOTELS</b></figcaption>
+                        </figure>
+                        <figure>
+                            <div class="dd"><i class="fa-solid fa-chart-line"></i></div>  
+                              <figcaption><b>RAIL DRISHTI</b></figcaption>
+                     </figure>
+                     <figure>
+                        <div class="dd"><i class="fa-brands fa-android"></i></div>  
+                          <figcaption><b>E-CATERING</b></figcaption>
+                 </figure>
+                 <figure>
+                    <div class="dd"><i class="fa-solid fa-bus"></i></div>  
+                      <figcaption><b>BUS</b></figcaption>
+             </figure>
+            </div>
+
+             <div class="m">
+             <figure>
+                <div class="dd f"><i class="fa-solid fa-shop"></i></div>  
+                  <figcaption><b>HOLIDAY PACKAGES</b></figcaption>
+             </figure>
+
+             <figure>
+                <div class="dd f"><i class="fa-solid fa-umbrella"></i></div>  
+                  <figcaption><b>TOURIST TRAIN</b></figcaption>
+             </figure>
+             <figure>
+                <div class="dd f"><i class="fa-solid fa-hill-rockslide"></i></div>  
+                  <figcaption><b>HILL RAILWAYS</b></figcaption>
+             </figure><figure>
+
+                <div class="dd f"><i class="fa-solid fa-train-subway"></i></div>  
+                  <figcaption><b>CHARTER TRAIN</b></figcaption>
+             </figure><figure>
+
+                <div class="dd">
+                    <i class="fa-solid fa-mountain-sun"></i></div>  
+                  <figcaption><b>GALLERY</b></figcaption>
+             </figure>
+            </div>
+            
+                </div>  
+                <div class="div">
+                    <img src="http://contents.irctc.co.in/en/GPT_NWEB_HOME_CENTER.jpeg" alt="">
+                </div>    
+        </div>
+
+        <br><br><br>
+        <div class="video">
+            <div class="vdiv">
+                <video controls  preload="auto"  src="https://cdn.pixabay.com/video/2019/12/08/29998-378309007_large.mp4" muted="muted">
+                    
+                </video>
+            </div>
+        </div>
+        <div class="holiday">
+            <h1>HOLIDAYS</h1>
+        </div>
+        <div class="maingrid">
+            <div class="g1">
+              <div class="special"><img src="https://static.toiimg.com/thumb/72050589.cms?resizemode=75&width=1200&height=900" alt="" class="train"></div>  <br>
+              <h1>Maharajas' Express</h1><br>
+                <p>Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p><br>
+                <button class="read">Read More &RightArrowBar;</button>
+            </div>
+
+            <div class="g1">
+                <div class="special"><img src="https://t4.ftcdn.net/jpg/06/04/46/33/360_F_604463371_oYKLuWiT7UYUZjwlSVRnQxxHglz9razx.jpg" alt="" class="train"></div>  <br>
+              <h1>International Packages</h1><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sint molestiae, laborum dolorum quos debitis nihil repellat minima culpa sequi ipsa natus modi quibusdam unde soluta sunt consequuntur quo libero ipsum illo necessitatibus itaque commodi temporibus? Optio aut amet modi facilis fuga ipsum expedita vel corporis omnis corrupti quas, a iure.</p><br>
+                <button class="read">Read More &RightArrowBar;</button>
+            </div>
+            <div class="g1">
+                <div class="special"><img src="https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="train"></div>  <br>
+              <h1>Domestic Air Packages</h1><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sint molestiae, laborum dolorum quos debitis nihil repellat minima culpa sequi ipsa natus modi quibusdam unde soluta sunt consequuntur quo libero ipsum illo necessitatibus itaque commodi temporibus? Optio aut amet modi facilis fuga ipsum expedita vel corporis omnis corrupti quas, a iure.</p><br>
+                <button class="read">Read More &RightArrowBar;</button>
+            </div>
+            <div class="g1">
+                <div class="special"><img src="https://5.imimg.com/data5/CG/CS/TG/SELLER-9644885/grand-train-tour-of-switzerland-tour-packages-services.png" alt="" class="train"></div>  <br>
+              <h1>Bharat Gaurav Tourist Train</h1><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sint molestiae, laborum dolorum quos debitis nihil repellat minima culpa sequi ipsa natus modi quibusdam unde soluta sunt consequuntur quo libero ipsum illo necessitatibus itaque commodi temporibus.</p><br>
+                <button class="read">Read More &RightArrowBar;</button>
+            </div>
+            <div class="g1">
+                <div class="special"><img src="https://www.pashupatitravels.com/wp-content/uploads/2018/09/hill-station-view.jpg" alt="" class="train"></div>  <br>
+              <h1>Rail Tour Packages</h1><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sint molestiae, laborum dolorum quos debitis nihil repellat minima culpa sequi ipsa natus modi quibusdam unde soluta sunt consequuntur quo libero ipsum illo necessitatibus itaque commodi temporibus? Optio aut amet modi facilis fuga ipsum expedita vel corporis omnis corrupti quas, a iure.</p><br>
+                <button class="read">Read More &RightArrowBar;</button>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="icondiv">
+            <div class="division">
+<p id="ahi">Get Connected with us on social networks</p>
+            </div>
+            <div class="more">
+                <img src="https://w7.pngwing.com/pngs/561/460/png-transparent-fb-facebook-facebook-logo-social-media-icon-thumbnail.png" alt="" class="buuterfly">
+                <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1717977600&semt=ais_user" alt="" class="buuterfly">
+                <img src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b?h=210" alt=""  class="buuterfly">
+                <img src="https://thumbs.dreamstime.com/b/snap-chat-w-251223623.jpg" alt="" class="buuterfly">
+                <img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-34992,resizemode-75,msid-103045218/magazines/panache/got-a-song-stuck-in-your-head-youtubes-experimental-hum-to-search-feature-could-be-the-answer/this-feature-gives-youtube-an-advantage-over-other-song-identification-apps-due-to-its-extensive-collection-of-official-and-user-generated-content-.jpg" alt="" class="buuterfly">
+
+                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="" class="buuterfly">
+
+                <img src="https://st2.depositphotos.com/7109552/11341/v/450/depositphotos_113413682-stock-illustration-creative-style-letter-p-symbol.jpg" alt="" class="buuterfly">
+
+                <img src="https://static.vecteezy.com/system/resources/previews/034/371/516/original/blue-flat-design-message-send-icon-email-send-icon-vector.jpg" alt="" class="buuterfly">
+
+                <img src="https://tal7aouy.gallerycdn.vsassets.io/extensions/tal7aouy/icons/3.8.0/1703110281439/Microsoft.VisualStudio.Services.Icons.Default" alt="" class="buuterfly">
+
+                <img src="https://img.freepik.com/premium-psd/google-icon-3d-render_68185-1079.jpg" alt="" class="buuterfly">
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="f1">
+                <p class="fname">IRCTC Trains
+                  </p>
+                  <p  class="fname">  General Information
+                 </p>
+                 <p  class="fname">   Important Information
+                    </p>
+                    <p  class="fname">Agents
+                        </p>
+                        <p  class="fname">Enquiries</p>
+            </div>
+            <div class="f1">
+                <p class="fname">How To
+                </p>
+                <p  class="fname">  IRCTC Official App
+               </p>
+               <p  class="fname">  Advertise with us
+
+                  </p>
+                  <p  class="fname">Refund Rules
+                      </p>
+                      <p  class="fname">Person With Disability Facilities</p>
+            </div>
+            <div class="f1">
+                <p class="fname">IRCTC eWallet
+                </p>
+                <p  class="fname">IRCTC Loyalty Program
+               </p>
+               <p  class="fname"> IRCTC-iPAY Payment Gateway
+
+                  </p>
+                  <p  class="fname">IRCTC Zone
+                      </p>
+                    
+            </div>
+            <div class="f1">
+                <p  class="fname">For Newly Migrated Agents</p>
+                <p  class="fname">Mobile Zone</p>
+                <p  class="fname">Policies</p>
+                <p  class="fname">Ask Disha ChatBot</p>
+                <p  class="fname">About us</p>
+            </div>
+        </footer>
+
+        <div class="companyname">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszSbLr29rTW7O7l-5vq_XiUx240ZFNb1mlw&s" alt="" class="cicon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/RuPay.svg/2560px-RuPay.svg.png" alt="" class="cicon">
+            <img src="https://logowik.com/content/uploads/images/verified-by-visa6450.jpg" alt="" class="cicon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQleuevQFYLzS4er3fnKR5hoQb27yqJvd3mZA&s" alt="" class="cicon">
+            <img src="https://www.procreditbank.ba//wp-content/uploads/2019/08/mc_seccode_png-1.png" alt="" class="cicon">
+            <img src="https://cdn.itatuba.pb.gov.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-14-at-09.33.34-1.jpeg" alt="" class="cicon">
+            <img src="https://iconape.com/wp-content/png_logo_vector/business-forum-building-a-beauty-brand-logo.png" alt="" class="cicon">
+        </div>
+    </div>
+
+ 
+    
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .parent
+        {
+            height: 870px;
+            width: 100%;
+            border: 2px solid palevioletred;
+            background-image: url('https://img.freepik.com/premium-photo/cool-dog-with-sunglasses-neckless-pink-background-copy-space-text-fashionable-appearance-be-trendy-style-fashion-stylish-pet-jewelry-accessories-generative-ai_429124-5232.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+        }
+        h1{
+            font-size: 90px;
+            line-height: 0.9cm;
+            color: rgb(227, 135, 60);
+          
+        }
+        p
+        {
+            font-size: 30px;
+            line-height: 0.5cm;
+        }
+        h3
+        {
+            font-size: 35px;
+        }
+        button
+        {
+            height: 60px;
+            width: 170px;
+            background-color: rgb(29, 171, 218);
+            color: white;
+            border-radius: 30px;
+            font-size: 20px;
+        }
+        span
+        {
+            font-size: 20px;
+            margin-left: 15px;
+        }
+        .child
+        {
+            width: 99.8%;
+            height: 70px;
+            border: 2px solid palevioletred;
+            border-radius: 20px;
+        }
+        ul
+        {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-evenly;
+            font-size: 25px;
+          font-family:'Courier New', Courier, monospace
+        }
+       .sign
+       {
+        height: 40px;
+        width: 120px;
+        background-color: white;
+        color: black;
+        position: relative;
+        bottom: 5px;
+        font-family:'Courier New', Courier, monospace
+
+       }
+       .child2
+       {
+          height: 150px;
+          width: 750px;
+          
+          display: flex;
+          column-gap: 50px;
+          padding: 10px;
+       }
+       img
+       {
+        height: 120px;
+        width: 130px;
+       }
+    </style>
+</head>
+<body>
+    <script>
+        let div=document.createElement("div")
+        div.className="parent";
+        document.body.appendChild(div);
+         let div1=document.createElement("div")
+         div1.className="child"
+         div.appendChild(div1)
+
+         let ul=document.createElement("ul")
+         div1.appendChild(ul);
+         let li=document.createElement("li");
+         li.innerText="HOME"
+         ul.appendChild(li);
+         li=document.createElement("li");
+         li.innerText="OUR PRODUCTS"
+         ul.appendChild(li);
+         li=document.createElement("li");
+         li.innerText="ABOUT US"
+         ul.appendChild(li);
+          
+         li=document.createElement("li")
+         ul.appendChild(li)
+         let button1=document.createElement("button")
+         button1.className="sign"
+         button1.innerText="SIGN UP";
+       
+         li.appendChild(button1)
+         
+        let h1=document.createElement("h1")
+        h1.innerText="Gut & Wellness";
+        div.appendChild(h1);
+        h1=document.createElement("h1");
+        h1.innerText="Products";
+        div.appendChild(h1);
+        let p=document.createElement("p")
+        p.innerText="for healthier and happier furry friends";
+        div.appendChild(p);
+         p=document.createElement("p")
+        p.innerText="your pet deserves better gut and overall health.";
+        div.appendChild(p);
+         p=document.createElement("p")
+        p.innerText="Give your pet a healthy gastrointestinal and ";
+        div.appendChild(p);
+         p=document.createElement("p")
+        p.innerText="help them live a longer life.";
+        div.appendChild(p);
+
+        let h3=document.createElement("h3")
+        h3.innerText="You care about your pet's health.We do too!"
+        div.appendChild(h3);
+
+        let button=document.createElement("button")
+        
+        button.innerText="Shop Now"
+        div.appendChild(button);
+
+        let span=document.createElement("span")
+        span.innerText="Subscribe For 15% Off And Free Shipping.Cancel Anytime"
+        div.appendChild(span);
+
+        h2=document.createElement("h2")
+        h2.innerText="As Seen in ==============================================="
+        div.appendChild(h2);
+
+        let div2=document.createElement("div")
+        div2.className="child2"
+        div.appendChild(div2);
+        let img=document.createElement('img')
+        img.src="https://www.techjunkie.com/wp-content/uploads/2020/10/How-to-Change-Your-Location-on-CBS-All-Access-1280x720.jpg"
+        div2.appendChild(img)
+
+        img=document.createElement('img')
+        img.src="https://1000logos.net/wp-content/uploads/2021/10/ABC-logo.png"
+        div2.appendChild(img)
+        
+        img=document.createElement('img')
+        img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUff35nj2A1wgvVaC4yIE-YP9EbkXLgATJFAmsEetXjg&s"
+        div2.appendChild(img)
+
+        img=document.createElement('img')
+        img.src="https://imageio.forbes.com/blogs-images/clareoconnor/files/2017/09/0828_forbes-logo-1930_650x455.jpg?height=455&width=650&fit=bounds"
+        div2.appendChild(img)
+
+
+
+     
+   
+    </script>
+    
+    
+</body>
+</html>

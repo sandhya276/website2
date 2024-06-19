@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!-- <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="https://cdn.pixabay.com/photo/2015/01/07/11/31/tigers-591359_1280.jpg" height="300px" width="800px">
+ <script>
+    function bigImg(s){
+        s.style.height="900px"
+        s.style.width="100%"
+    }
+    function normalImg(s){
+        s.style.height="300px"
+        s.style.width="800px"
+    }
+ </script> -->
+
+ <!-- <h1>Text color change</h1>
+ <p id="done" onmousedown="down()" onmouseup="up()"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque odit officia quaerat veniam aperiam aut amet provident nisi asperiores commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum recusandae architecto libero asperiores cumque iure, ipsam animi dolore provident quis obcaecati ducimus ratione impedit fuga sunt quod assumenda voluptates sequi cum consequuntur? Veritatis reiciendis sapiente cupiditate aut, nesciunt ex expedita tenetur consectetur cum, odit repudiandae nobis reprehenderit facilis error sequi.</p>
+ <script>
+    function down(){
+        document.getElementById("done").style.color="red"
+    }
+    function up(){
+        document.getElementById('done').style.color="blue"
+    }
+ </script> -->
+   <h1>onkeydown</h1>
+  <input type="text" onkeydown="fun()">
+  <p id="demo"></p>
+  <script>
+    function fun(){
+        document.getElementById("demo").innerHTML="Done . Completed your task"
+    }
+  </script>
+ <h2>The keyup Event</h2>
+
+<p>A function is triggered when the user releases a key in the input field.</p>
+<p>The function transforms the input field to upper case:</p>
+
+Enter your name: <input type="text" id="name" onkeyup="myFunction()">
+
+<script>
+function myFunction() {
+  let variable = document.getElementById("name");
+  variable.value = variable.value.toUpperCase();
+}
+</script>
+<!-- <h2>The onkeypress Event</h2>
+
+<p>A function is triggered when the user is pressing a key in the input field.</p>
+
+<input type="text" onkeypress="myFunction()">
+
+<script>
+function myFunction() {
+  alert("You pressed a key inside the input field");
+} -->
+</script>
+</body>
+</html>

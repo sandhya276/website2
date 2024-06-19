@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(26, 38, 35);
+          font-family: 'poppins','sans-serif';
+        }
+        .main{
+            width: 360px;
+            padding: 33px;
+            margin-left: 33px;
+            background-color: white;
+            text-align: center;
+            margin-top: 5px;
+        }
+        input{
+            width: 270px;
+            height: 40px;
+            border: 2px solid rgb(14, 32, 32);
+            outline: none;
+        }
+        button{
+            width: 60px;
+            height: 41px;
+            background-color: rgb(4, 90, 90);
+            color: white;
+            border-radius: 2px;
+            font-size: 19px;
+            border: none;
+            outline: none;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+     <div class="main">
+        <h1>ToDo App </h1>
+        <div class="input">
+            <input type="text" placeholder="enter your taks" id="inp">
+            <button onclick="App(inp.value)">App</button>
+        </div>
+        <div class="text"></div>
+     </div>
+     <script>
+        let input=document.getElementById('inp')
+        let text=querySelector('.text');
+
+        function App(){
+            if(input.value==" "){
+                alert('plese enter task')
+                
+            }
+            else{
+                let newEle=document.createElement('ul');
+                newEle.innerHTML=`${input.value}`
+                text.appendChild(newEle)
+            }
+        }
+     </script>
+</body>
+</html>

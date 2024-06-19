@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 600px;
+            width: 650px;
+            border: 1px solid;
+           
+        }
+        .child{
+            height: 500px;
+            width: 650px;
+            border: 1px solid;
+        }
+        button{
+            height: 50px;
+            width: 50px; 
+            
+        }
+        .on{
+            height: 600px;
+            width: 500px;
+            border: 1px solid;
+            overflow: scroll;
+        }
+       .on::-webkit-scrollbar
+       {
+        
+        width: 20px;
+       }
+    .on::-webkit-scrollbar-track{
+ 
+       border-radius:10px;
+       background-color: darksalmon;
+        
+    }
+    .on::-webkit-scrollbar-thumb{
+        border: 10px;
+        background-color: deeppink;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child">
+       
+        <img src="" alt="">
+    </div>
+        <button onclick="fun1()" id="button1">1</button>
+        <button onclick="fun2()" id="button2">2</button>
+        <button onclick="fun3()" id="button3">3</button>
+        <button onclick="fun4()" id="button4">4</button>
+    </div>
+
+     <script>
+      function  fun1(){
+            document.getElementById('button1').style.backgroundColor='green'
+            document.getElementById('button2').style.backgroundColor='white'
+            document.getElementById('button3').style.backgroundColor='white'
+            document.getElementById('button4').style.backgroundColor='white'
+
+        };
+     function   fun2(){
+            document.getElementById('button1').style.backgroundColor='white'
+            document.getElementById('button2').style.backgroundColor='red'
+            document.getElementById('button3').style.backgroundColor='white'
+            document.getElementById('button4').style.backgroundColor='white' 
+        };
+
+      function  fun3(){
+            document.getElementById('button1').style.backgroundColor='white'
+            document.getElementById('button2').style.backgroundColor='white'
+            document.getElementById('button3').style.backgroundColor='blue'
+            document.getElementById('button4').style.backgroundColor='white' 
+        };
+       
+      function  fun4(){
+            document.getElementById('button1').style.backgroundColor='white'
+            document.getElementById('button2').style.backgroundColor='white'
+            document.getElementById('button3').style.backgroundColor='white'
+            document.getElementById('button4').style.backgroundColor='yellow' 
+        };
+
+     </script>
+
+
+<form>
+    <input type="password"id="pass" >
+    <input type="checkbox" onclick="fun(pass)">
+
+    <script>
+        function fun(){
+
+            let a=document.getElementById('pass')
+            if(a.type=='password')
+            {
+                a.type='text'
+            }
+        else{
+            a.type='password'
+        }
+        }
+    </script>
+
+    <div class="on">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae eaque nesciunt dolores ea at eius eveniet minus voluptate. Nostrum debitis dicta doloribus ullam dignissimos voluptatibus fugiat molestias blanditiis ipsum eligendi. Ipsam perspiciatis quos nostrum, nobis asperiores, suscipit sed animi mollitia aliquid officiis, maxime quod placeat optio natus dolore. Doloremque, amet
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus eaque fugiat rerum perferendis accusamus officiis assumenda reprehenderit ducimus, voluptatem facere nostrum porro non dolorem esse, inventore sit doloremque eveniet quae.</p>
+        <img src="c:\Users\Admin\Downloads\flowers-276014_640.jpg" alt="">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla beatae iure totam amet consequatur officia delectus maiores dolores eos excepturi ad soluta sequi cum obcaecati veritatis saepe quasi, accusantium ratione doloremque omnis sunt a id ipsam. Error omnis commodi perferendis magnam dolorem beatae molestiae odit veniam maiores exercitationem impedit laboriosam suscipit, reprehenderit, ullam neque sapiente quidem facere iste dolorum quam. Nemo veniam repellat sapiente ipsam asperiores perferendis esse, nobis corporis! Obcaecati optio voluptas reiciendis cumque aliquam nisi officiis totam magnam porro repudiandae fuga provident voluptatibus blanditiis doloribus error voluptates commodi enim ducimus odio architecto libero aperiam, dolorem non eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quo quasi saepe explicabo esse exercitationem quia recusandae dolores molestiae reprehenderit. Ipsum ea voluptas ad cumque ab repellat porro commodi corrupti.</p>
+    </div>
+</form>
+ 
+
+<table  rules="">
+   
+        <tr>
+            <td>Name</td>
+            <td>lastname</td>
+            <td>class</td>
+        </tr>
+        <tr>
+            <td>sandhya</td>
+            <td>jagtap</td>
+            <td>coding</td>
+        </tr>
+        <tr>
+            <td>pooja</td>
+            <td>nale</td>
+            <td>coding</td>
+
+        </tr>
+        <tr>
+            <td>shagusta</td>
+            <td>shaikh</td>
+             <td>coding</td>
+        </tr>
+
+        <tr>
+            <td>alfiya</td>
+            <td>shaikh</td>
+            <td>coding</td>
+        </tr>
+</table>
+
+<input type="file" id="main" onchange="myfun(main.value)">
+<img src="c:\Users\Admin\Downloads\hills-2836301_640 (1).jpg" alt="" id="m">
+<script>
+    function myfun(stor){
+        let p=document.getElementById('main');
+
+document.getElementById('m').src=URL.createObjectURL(p.files[0])
+    }
+   
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main1
+        {
+            background-color: white;
+            border: 1px solid;
+            width: 500px;
+            height: 400px;
+        }
+        button
+        {
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            background-color: white;
+            font-size: 19px;
+            border-color: grey;
+            margin: 10px;
+            color: grey;
+        }
+        #next{
+            background-color: blue;
+            color: white;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="main">
+        <h1>How long have you know our Institute?</h1>
+        <button onclick="colorset()" id="btn">never</button>
+      
+        <button onclick="colorset1()" id="btn1">0-1 year</button><br><br>
+        <button onclick="colorset2()" id="btn2">1-2 year</button>
+        <button onclick="colorset3()" id="btn3">> 5 year</button>
+<br><br><br>
+  <button id="next">Next</button>
+    </div>
+
+    <script>
+
+   
+        function colorset() {
+
+         
+        
+            document.getElementById("btn").style.borderColor="blue ";
+            document.getElementById("btn").style.transition=" all 0.3px"  
+            document.getElementById("btn1").style.borderColor='grey' 
+            document.getElementById("btn2").style.borderColor='grey' 
+            document.getElementById("btn3").style.borderColor='grey' 
+        }
+        function colorset1() {
+            document.getElementById("btn1").style.borderColor="blue ";
+            document.getElementById("btn1").style.transition=" all 0.3px"      
+            document.getElementById("btn").style.borderColor="grey ";
+            document.getElementById("btn2").style.borderColor='grey' 
+            document.getElementById("btn3").style.borderColor='grey' 
+
+        }
+        function colorset2() {
+            document.getElementById("btn2").style.borderColor="blue ";
+            document.getElementById("btn2").style.transition=" all 0.3px" 
+            document.getElementById("btn3").style.borderColor='grey' 
+            document.getElementById("btn").style.borderColor="grey ";
+            document.getElementById("btn1").style.borderColor="grey ";
+
+        }
+        function colorset3() {
+            document.getElementById("btn3").style.borderColor="blue ";
+            document.getElementById("btn3").style.transition=" all 0.3px"  ;
+            document.getElementById("btn1").style.borderColor='grey' 
+            document.getElementById("btn2").style.borderColor='grey'   ;
+            document.getElementById("btn").style.borderColor="grey ";
+
+        }
+
+    </script>
+
+
+ 
+
+</body>
+</html>

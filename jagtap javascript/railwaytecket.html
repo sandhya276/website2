@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio&family=Monoton&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/33042e1aad.js" crossorigin="anonymous"></script>
+    <title>IRCTC Next Genration eTickets Syestems</title>
+    <link rel="icon" href="https://www.irctc.co.in/nget/assets/images/logo.png">
+   <link rel="stylesheet" href="railwayticket.css">
+   <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  #main
+  {
+      height: auto;
+      width: 100%;   
+  }
+  header{
+    display: flex;
+    justify-content: space-between;  
+  }
+  .irctclogo
+  {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .body
+  {
+    height: 800px;
+    width: 100%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Thiruvananthapuram_Kasaragod_Vande_Bharat_Express_%28via_Alappuzha%29_-_1st_Rake.jpg/800px-Thiruvananthapuram_Kasaragod_Vande_Bharat_Express_%28via_Alappuzha%29_-_1st_Rake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+  }
+  .formdiv
+  {
+    margin: 50px;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+  }
+  .spandiv
+  {
+    display: flex;
+  }
+  .span
+  {
+    background-color: rgb(33, 33, 82);
+    color: white;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  hr{
+    width: 20px;
+  }
+  h1
+  {
+    text-align: center;
+    padding: 20px;
+    color: rgb(77, 77, 218);
+   }
+   form{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   }
+   .first-input{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   }input,select{
+    width: 150px;
+    outline: none;
+    border: none;
+   }
+   .input{
+    width: 200px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   }.second-input{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 86%;
+   }.input1{
+    margin-bottom: 18px;
+    color: rgb(77, 77, 218);
+   }
+   .p{
+    width: 20px;
+    height: 20px;
+   }
+   ::placeholder,select,i
+   {
+    color: rgb(77, 77, 218);
+   }
+   .formfooter
+   {
+    height: 70px;
+    width: 83.3%;
+    position: relative;
+    left: 50px;
+    bottom: 44px;
+    background-color: white;
+    text-align: center;
+    color: rgb(5, 112, 235);
+   }
+   .r{
+    color: rgb(9, 5, 235);
+    font-size: 25px;  
+   }
+   .rparent
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+   }
+   hr
+   {
+    height: 30px;
+    width: 1px;
+   }
+   .body2
+   {
+   height: auto;
+   width: 100%;
+   padding: 40px;
+   }
+   .have
+   {
+    text-align: center;
+    font-size: 30px;
+   }
+   .icon
+   { 
+   height: 500PX;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+    }
+    .s{
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .first{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    column-gap: 60px;
+    width: 100%;
+   }
+   .second{
+    width: 100%;
+   }
+   figcaption
+   {
+    margin-left:12px ;
+    padding-top: 20px;
+   }
+   .carddiv
+   {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+   }
+   .card
+   {
+  height: 500px;
+  width: 350px;
+  box-shadow: 0px 0px 5px black;
+   }
+   .carddiv1
+   {
+    height: 600px;
+    width: 100%; 
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+   }
+   .divicon
+   {
+    height: 100px;
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    background-image: linear-gradient(-45deg,purple,rgb(30, 30, 75));
+   }
+   .icon1
+   {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+   }
+   footer
+   {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 15, 91);
+    column-gap: 80px;
+   margin-top: 3px;
+   }
+   h4{
+    font-size: 20px;
+    line-height: 60px;
+    color: white;
+   }
+   #footer
+   {
+display: flex;
+justify-content: space-around;
+margin-top: 5px;
+   }
+   .foot{
+height: 80px;
+width: 80px;
+   }
+   h4:hover
+   {
+    border-color: chocolate;
+   }
+   .navbar
+   {
+    height: 850px;
+    width: 300px;
+    position: fixed;
+    right: 0px;
+    background-color: white;
+   }
+   #irctc1{
+          height:35px;
+          width: 200px;
+          margin: 25px;
+        background-color: rgb(55, 55, 195);
+        font-weight: bold;
+        color: white;
+        border: none;
+   }
+   .timer
+   {
+    height: 150px;
+    background-color: rgb(232, 246, 249);
+   }
+   .hr{
+    height: 1px;
+    width: 100%;
+   }
+   .p{
+    font-size: 20px;
+    padding-left: 10px;
+   }
+   .hroption
+   {
+    width: 100%;   
+   }
+   #login:hover
+   {
+    box-shadow: 0px 0px 3px orangered;
+   }
+   .s:hover
+   {
+    box-shadow: 0px 0px 20px rgb(2, 2, 2);
+   
+   }
+   .s{
+    cursor: pointer;
+   }
+   
+   
+   </style>
+</head>
+<body>
+    <script>
+        setInterval(myTimer, 100);
+function myTimer() {
+  const d = new Date();
+  const day=d.getDate();
+  const month=d.toLocaleString('default',{month:'long'});
+  const year=d.getFullYear();
+  document.getElementById("h6").innerHTML = `${day}-${month}-${year}`+"[" + d.toLocaleTimeString() + "]";
+}
+    </script>
+
+    <div id="topmain">
+
+   
+    <div class="navbar" id="aside" style="display: none;">
+        <div class="timer">
+            <button style="height: 40px; width: 150px; margin: 20px; background-color: rgb(60, 60, 180); color: white; font-weight: bold; border: none;" id="login">LOGIN</button>
+            <h3 id="h6" style="padding-left: 20px;"></h3>
+        </div>
+        <div class="irctc">
+            <button id="irctc1">IRCTC EXCLUSIVE</button>
+        </div>
+        <div class="hroption">
+            <hr class="hr">
+            <br>
+            <p class="p" style="color: orangered;text-decoration: underline;">TRAINS</p>
+            <br>
+            
+            <hr class="hr">
+            <br>
+            <p class="p">BUSES</p>
+            <br>
+              <hr class="hr">
+              <br>
+            <p class="p">FLEGHT</p>
+            <br>
+            <hr class="hr">
+            <br>
+            <p class="p">HOTELS</p>
+            <br>
+              <hr class="hr">
+              <br>
+            <p class="p">HOLIDAYS</p>
+            <br>
+               <hr class="hr">
+               <br>
+            <p class="p">LOYALITY</p>
+            <br>
+               <hr class="hr">
+               <br>
+               <p class="p">MEALS</p>
+               <br>
+               <hr class="hr">
+               <br>
+               <P class="p">PROMOTIONS</P>
+               <br>
+             <hr class="hr">
+             <br>
+             <p class="p">ALERTS</p>
+             <br>
+             <hr class="hr">
+             <br>
+             <p class="p">MORE</p>
+             <br>
+             <hr class="hr">
+             <br>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div id="main" >
+       
+ <header>
+
+    <div class="railwaylogo" style="padding: 20px;"><img src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png" alt="" class="logo"></div>
+
+    <div class="irctclogo"><img src="https://www.irctc.co.in/nget/assets/images/logo.png" alt="" class="logo"> <i class="fa-solid fa-list fa-3x" style="cursor: pointer;color: rgb(53, 51, 51);" onclick="fun()"></i></div>
+    <script>
+        function fun()
+        {
+            document.getElementById("aside").style.display="block";
+        }
+        function fun2()
+        {
+            document.getElementById("aside").style.display="none";
+
+        }
+    </script>
+   
+
+</header>
+
+
+
+
+
+<div class="body" onclick="fun2()">
+    <div class="formparent">
+    <div class="formdiv">
+        <div class="spandiv">
+        <div class="span"><i class="fa-solid fa-clipboard-list" style="color: white;"></i><a href="https://www.indianrail.gov.in/enquiry/PNR/PnrEnquiry.html?locale=en" style="text-decoration: none;color: white;">PNR STATUS</a> </div>
+        <hr>
+        <div class="span"><i class="fa-solid fa-calendar-days"style="color: white;"></i><a href="https://www.irctc.co.in/online-charts/" style="text-decoration: none;color: white;">  CHART-VACANCY</a></div>
+    </div>
+
+        <h1>BOOK TICKET</h1>
+          <form action="">
+             <div class="first-input">
+             <div class="input"><i class="fa-solid fa-location-arrow"></i><input type="text" placeholder="Form"></div>
+             <div class="input1"><div class="name"><p style="text-align: center;">DD/MM/YYY*</p></div><div class="input"><i class="fa-solid fa-calendar-days"></i><input type="date" style="color:  rgb(77, 77, 218);"></div></div>
+             </div>
+             <div class="first-input">
+                <div class="input"><i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="TO"></div>
+                <div class="input"><i class="fa-solid fa-briefcase"></i><select name="r" id="r">
+                    <option value="r">ALL CHESES</option>
+                    <option value="r">ANUBHUTI CLASS(EA)</option>
+                    <option value="r">AC FIRST CLASS(A1)</option>
+                    <option value="r">VISTADOME AC (EV)</option>
+                    <option value="r">ECXEC. CHIAR CAR(EC)</option>
+                    <option value="r">AC 2 TIEAR (2A)</option>
+                    <option value="r">FIRST CLASS (AC)</option>
+                    <option value="r">AC 3 TIEAR (3A)</option>
+                    <option value="r">AC 3 ECONOMY (3E)</option>
+                    <option value="r">SLEEPER (SL)</option>
+                    <option value="r">SECOND SETTING(2S)</option>
+                    <option value="r">VISTADOME NONE AC (VS)</option>
+                </select></div>
+             </div> <div class="first-input second-input">
+                <div class="input"><i class="fa-sharp fa-solid fa-grip-vertical"></i><select name="" id="">
+                    <option value="">GENARAL</option>
+                    <option value="">LADIES</option>
+                    <option value="">LOWER BERTH/SR.CITIZEN</option>
+                    <option value="">PERSON WITH DISEBELITY</option>
+                    <option value="">DUTY PASS</option>
+                    <option value="">TATKAL</option>
+                    <option value="">PREMIUM TATKAL</option>
+                </select></div>
+                
+             </div>
+             <div class="input1"><input type="checkbox" class="p">&nbsp; Person With Disability Consecian  &nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox"class="p">&nbsp; Flexible With Date <br><input type="checkbox"class="p">&nbsp; Train With Available Birth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox"class="p">&nbsp;  Railway Pass Concession</div>
+
+             <div class="buttondiv" style=" width: 100%; display: flex; justify-content: space-around;">
+                <button style="height: 40px; width: 80px;background-color: rgb(211, 93, 50); border: none; border-radius: 5px;">Search</button>
+                <button style="height: 40px; width: 250px; background-color: rgb(22, 224, 22); border: none;border-radius: 5px;"><a href="https://askdisha.irctc.co.in/?clicked=true" style="text-decoration: none;">Try Booking in Ask DISHA 2.0</a></button>
+             </div>
+          </form>
+    </div>
+<div class="formfooter"><a href="https://www.irctc.com/empanelment.html" style="text-decoration: none; color: #378CE7;">please click here for Emphanelment for PDA items for Catering.</a></div>
+</div>
+<div class="railwayname">
+    <h1 style="font-size: 50px;font-weight: bold;">INDIAN RAILWAYS</h1>
+    <div class="rparent">
+    <div class="r">Safety</div><hr><div class="r">Security</div><hr><div class="r">Punchtulity</div>
+</div>
+</div>
+</div>
+<!-- bodytagend -->
+
+<div class="adddiv" style="height: 400px; width: 100%;;padding: 5px;" onclick="fun2()">
+    <img src="https://s0.2mdn.net/simgad/16684130924174826100" alt="" style="height: 150px; width: 100%;">
+    <img src="https://tpc.googlesyndication.com/simgad/8798350741223875165" alt="" style="height: 200px; width: 100%; padding: 8px;">
+    </div>
+
+
+<div class="body2" onclick="fun2()">
+
+
+    <div class="have">
+        <h2>Have you not found the right one? <br>Find a service suitable for you here. </h2>
+    </div>
+    <div class="icon">
+        <div class="first second">
+        <figure> 
+            <div class="s">
+            <i class="fa-solid fa-plane fa-4x" style="color: black;" ></i>
+        </div><figcaption>FLIGHTS</figcaption>
+       </figure>
+
+
+        <figure> <div class="s">
+            <i class="fa-solid fa-hotel fa-4x" style="color: black;"></i>
+        </div><figcaption>HOTELS</figcaption></figure>
+        <figure> 
+            
+            <div class="s">
+                <i class="fa-solid fa-share-from-square fa-4x" style="color: black;"></i></i>
+        </div><figcaption>RAIL DRISHTI</figcaption></figure>
+
+
+
+        <figure> 
+            
+            <div class="s">
+                <i class="fa-brands fa-android fa-4x" style="color: black;"></i>
+        </div><figcaption>E-CATRING</figcaption></figure>
+
+
+
+        <figure> 
+            
+            <div class="s">
+                <i class="fa-solid fa-bus fa-4x" style="color: black;"></i>
+        </div><figcaption style="margin-left:38px ;">BUS</figcaption></figure>
+
+        </div>
+        <div class="first second">
+            <figure> 
+            <div class="s"><i class="fa-solid fa-umbrella-beach fa-4x" style="color: black;"></i>
+            
+        </div> <figcaption>HOLIDAYS</figcaption></figure>
+      
+
+
+        <figure> 
+            
+            <div class="s">
+                <i class="fa-solid fa-train fa-4x" style="color: black;"></i>
+        </div><figcaption>FLIGHTS</figcaption></figure>
+        
+        <figure> 
+            <div class="s">
+                <i class="fa-solid fa-mountain-sun fa-4x" style="color: black;"></i>
+        </div><figcaption>HILL RAILWAYS</figcaption></figure>
+        
+            <figure>
+            <div class="s">
+                <i class="fa-solid fa-truck-fast fa-4x" style="color: black;"></i>
+        </div><figcaption  style="margin-left:38px ;">CAR</figcaption></figure>
+
+        <figure>
+            <div class="s">
+                <i class="fa-solid fa-mug-hot fa-4x"  style="color: black;"></i>
+        </div><figcaption  style="margin-left:38px ;">TEA</figcaption></figure>
+    </div>
+    </div>
+</div>
+
+<div class="adddiv2" style="width: 100%; height: 150px;display: flex;justify-content: center;" onclick="fun2()">
+    <img src="http://contents.irctc.co.in/en/GPT_NWEB_HOME_CENTER.jpeg" alt="" height="100%" width="70%" style="padding: 10px;">
+</div>
+<div class="videodiv" style="display: flex; justify-content: center;" onclick="fun2()">
+   <video controls autoplay muted style="padding: 20px;">
+    <source src="https://media.istockphoto.com/id/1281080948/video/glacier-express-train-on-landwasser-viaduct-in-the-swiss-alps.mp4?s=mp4-640x640-is&k=20&c=AKQs17TXLgOW1oL06h-zSRd5zh-tOjv7hoxHEjqDI2o=">
+   </video>
+</div>
+
+<div class="carddiv" onclick="fun2()">
+    <div class="card" style="padding: 5px;"><img src="https://www.irctc.co.in/nget/assets/images/exterior.jpg" alt=""><h2 style="text-align: center; padding: 10px;">Maharajas' Express</h2><p style="padding: 10px;">Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p></div>
+    <div class="card" style="padding: 5px;"><img src="https://www.irctc.co.in/nget/assets/images/Thailand.jpg" alt=""><h2 style="text-align: center; padding: 10px;">International Packages</h2><p style="padding: 10px;">Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.</p></div>
+    <div class="card" style="padding: 5px;"><img src="https://www.irctc.co.in/nget/assets/images/Kashmir.jpg" alt=""><h2 style="text-align: center; padding: 10px;">Domestic Air Packages</h2><p style="padding: 10px;">Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p></div>
+</div>
+<div class="carddiv1" onclick="fun2()">
+    <div class="card" style="padding: 5px;"><img src="https://www.irctc.co.in/nget/assets/images/Bharat_Gaurav.jpg" alt=""><h2 style="text-align: center; padding: 10px;">Bharat Gaurav Tourist Train</h2><p style="padding: 10px;">IRCTC operates Bharat Gaurav Tourist Train having AC III-Tier accommodation on train specially designed to promote domestic tourism in India. This train runs on various theme based circuits covering pilgrimage and heritage destinations in its itinerary on a 5 days to 20 days trip and showcase India’s rich cultural heritage.</p></div>
+    <div class="card" style="padding: 5px;"><img src="https://www.irctc.co.in/nget/assets/images/Manali.jpg" alt=""><h2 style="text-align: center; padding: 10px;">Rail Tour Packages</h2><p style="padding: 10px;">IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</p></div>
+</div>
+<div class="divicon" onclick="fun2()">
+    <h4 style="color: white;">Get Connected with us on social networks</h4>
+    <img src="https://w7.pngwing.com/pngs/927/778/png-transparent-facebook-icon-like-button-facebook-icon-blue-text-rectangle-thumbnail.png" alt="" class="icon1">
+    <img src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/whatsapp-512.png" alt="" class="icon1">
+    <img src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png" alt="" class="icon1">
+    <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png" alt="" class="icon1">
+    <img src="https://w7.pngwing.com/pngs/826/146/png-transparent-social-media-computer-icons-linkedin-social-network-social-media-text-trademark-logo.png" alt="" class="icon1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9umQ8S2MdDE4K4nQHhoy_RxiRfpcXRnNABg&s" alt="" class="icon1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9n7jj4Q_eVDeXB5iTASx4N-A5lrz05sFDlA&s" alt="" class="icon1">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/005/165/500/small/t-alphabet-letter-logo-icon-creative-design-for-company-and-business-vector.jpg" alt="" class="icon1">
+    <img src="https://play-lh.googleusercontent.com/6Bq7bt1eH-MHUUrbWfNUw4-jLyLVe9Fdwe1zr8oSZrxkK7bmo9bvC1X886MylHJ2ONUa" alt="" class="icon1">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="" class="icon1">
+</div>
+<footer onclick="fun2()">
+    <div class="footer">
+        <h4>IRCTC Trains</h4>
+        <h4>General Information</h4>
+        <h4>Important Information</h4>
+        <h4>Agents</h4>
+        <h4>Enquiries</h4>
+
+
+       
+
+
+       
+
+
+      
+
+
+    </div>
+    <div class="footer">
+        <h4>HOW TO</h4>
+        <h4>IRCTC Official App</h4>
+        <h4>Advertise with us</h4>
+        <h4>Refund Rules</h4>
+        <h4>Person With Disability Facilities</h4>
+
+        
+      
+    </div>
+
+    <div class="footer">
+        <h4>IRCTC eWallet</h4>
+        <h4>IRCTC Loyalty</h4>
+        <h4>IRCTC SBI </h4>
+        <h4>IRCTC BOB</h4>
+        <h4>IRCTC HDFC </h4>
+        <h4>IRCTC-iPAY </h4>
+        <h4>IRCTC Zone</h4>
+
+    </div>
+    <div class="footer">
+        <h4>For Newly Migrated Agents</h4>
+        <h4>Mobile Zone</h4>
+        <h4>Policies</h4>
+        <h4>Ask Disha ChatBot</h4>
+        <h4>About us</h4>
+
+    </div>
+</footer>
+<div id="footer" onclick="fun2()">
+    <img src="https://logowik.com/content/uploads/images/461_verisign_logo.jpg" alt="" class="foot">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapt6bCfFKVEeVMsp5NRz4iOLHcGBqzPtPWw&s" alt="" class="foot">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThzpTYlTCF85mrMCNIu7Ev2lyGIJv4RiYJ6w&s" alt="" class="foot">
+    <img src="https://e7.pngegg.com/pngimages/107/226/png-clipart-3-d-secure-security-credit-card-business-payment-credit-card-blue-3d-computer-graphics.png" alt="" class="foot">
+    <img src="https://images.indianexpress.com/2023/06/1200px-Rupay-Logo.png" alt="" class="foot">
+    <img src="https://thebrandhopper.com/wp-content/uploads/2021/01/Indian-Railway-Catering-and-Tourism-Corporation.png" alt="" class="foot">
+    <img src="https://media.licdn.com/dms/image/C510BAQEJNV9ET3zHBg/company-logo_200_200/0/1630625101210?e=2147483647&v=beta&t=IE6PuxnR-ApSPDcJSmwgf9guA_zdOD4X9H5U4amqh7g" alt="" class="foot">
+</div>
+</div>
+</div>
+</body>
+</html>

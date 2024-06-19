@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+      <button onclick="sec()">strat</button>
+
+     <button ondblclick="pooja()">on</button>
+
+     <p id="demo"></p>
+    <script>
+          let a=setTimeout(myfun,2000);
+       function myfun(){
+          document.write("  sandhya");
+
+       }
+       function sec(){
+      clearTimeout(a);
+       }
+
+
+       let b=setInterval(save,2000)
+       function save()
+       {
+           document.write("  class");
+       }
+
+       function pooja()
+       {
+         clearInterval(b);
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="surveystyle.css">
+</head>
+<body>
+    <div class="main">
+        <div class="backimg">
+            <h1>Institute Survey Form</h1>
+            <p>We would love to hear your thoughts on how we can improve your experience.</p>
+        </div>
+
+        <div class="quiz">
+           <div class="no">
+            <div class="first a" id="c1">1</div><hr class="as" id="k">
+            <div class="first b" id="c2" >2</div><hr class="as" id="k1">
+            <div class="first c" id="c3">3</div><hr class="as" id="k2">
+            <div class="first d" id="c4">4</div><hr class="as" id="k3">
+            <div class="first e" id="c5">5</div>
+           </div>
+           <!-- first question -->
+            <div class="main1" id="main1">
+                <h1 id="question">1. How long have you know our Institute?</h1>
+                <input type="radio" id="n1">&nbsp;&nbsp;&nbsp;&nbsp;<span>Never </span><br>
+                <input type="radio" id="n2">&nbsp;&nbsp;&nbsp;&nbsp;<span>0-1 year</span> <br>
+                <input type="radio" id="n3">&nbsp;&nbsp;&nbsp;&nbsp;<span>1-2 year</span> <br>
+                <input type="radio" id="n4">&nbsp;&nbsp;&nbsp;&nbsp;<span>> 5 year</span> 
+        <br><br>
+          <button id="next" onclick="jumpNext()">Next</button>
+            </div>
+            
+             <!-- second question-->
+    <div class="main2" style="display: none;" id="main2">
+        <h2>2. What is your overall opinion about the institute ?</h2><br>
+        <input type="radio" name="a" id="a1">&nbsp;&nbsp;&nbsp;&nbsp;<span> Not Satisfied </span><br>
+        <input type="radio" name="a"  id="a2">&nbsp;&nbsp;&nbsp;&nbsp;<span>Quite Satisfied </span><br>
+        <input type="radio" name="a"  id="a3">&nbsp;&nbsp;&nbsp;&nbsp;<span>Satisfied</span><br>
+        <input type="radio" name="a"  id="a4"> &nbsp;&nbsp;&nbsp;&nbsp;<span>Completely Satisfied</span> <br><br>
+        <button id="next" onclick="returnn()">Prev</button>
+        <button id="next" onclick="jump()">Next</button>
+    </div>
+
+    <!--third question-->
+
+    <div class="main3"  id="main3" style="display: none;">
+        <h2>3. What is your overall opinion about the institute ?</h2><br>
+        <input type="checkbox" id="abc1">&nbsp;&nbsp;&nbsp;&nbsp;<span> Search Engine </span><br>
+        <input type="checkbox" id="abc2">&nbsp;&nbsp;&nbsp;&nbsp;<span>A friend of mine </span><br>
+        <input type="checkbox" id="abc3">&nbsp;&nbsp;&nbsp;&nbsp;<span>Social Media</span><br>
+        <input type="checkbox" id="abc4"> &nbsp;&nbsp;&nbsp;&nbsp;<span>Other</span> <br><br>
+        <button id="next" onclick="returnn1()">Prev</button>
+        <button id="next1" onclick="jump1()">Next</button>
+    </div>
+<!--forth question -->
+    <div class="main4"  id="main4" style="display: none;">
+        <h2>4. Would you recommend our insitute to your friends ?</h2><br>
+        <input type="radio" name="a" id="b1">&nbsp;&nbsp;&nbsp;&nbsp;<span>Yes</span><br>
+        <input type="radio" name="a" id="b2">&nbsp;&nbsp;&nbsp;&nbsp;<span>No </span><br>
+        <input type="radio" name="a" id="b3">&nbsp;&nbsp;&nbsp;&nbsp;<span>Maybe</span><br><br>
+        <span>Additional Message</span><br><br>
+        <textarea name="" id="b4" cols="34" rows="8"></textarea><br><br>
+        <button id="next" onclick="returnn2()">Prev</button>
+        <button id="next1" onclick="jump2()">Next</button>
+    </div>
+
+
+
+<!--five question-->
+    <div class="main5" style="display: none;" id="main5">
+        <h1>Please Fill your details</h1>
+        <form >
+            <label for="">Name :</label><br>
+            <input type="text" placeholder="Your Name" class="same" id="username" ><br>
+            <p id="userError" class="error"></p><br>
+            <label for="">Email :</label><br>
+            <input type="email" placeholder="Your Email" class="same" id="mymail" ><br>
+            <p id="userError1" class="error"></p><br>
+
+          <input list="browsers" name="browser" id="browser" class="same">
+      <datalist id="browsers">
+        <option value="india">
+        <option value="France">
+        <option value="Russia">
+        <option value="Poland">
+        <option value="Oman">
+        <option value="Nepal">
+        <option value="Malaysia">
+        <option value="Andorra">
+        <option value="Bahrain">
+        <option value="Brazil">
+        <option value="Burma">
+        <option value="Serbia">
+      </datalist><br>
+    <p id="userError2" class="error"></p><br>
+      <label for="">Age :</label><br>
+      <input type="number" placeholder="Age" class="same" id="anyage"><br>
+      <p id="userError3" class="error"></p><br>
+
+    </form>
+    <button onclick="returnn3()" type="button" id="next1" >Prev</button>
+    <button  onclick="formValidation()" id="next1" type="submit" ><input type="submit" class="lastPre"></button>
+       </div>
+
+
+
+
+       <!--six question-->
+
+       <div class="main6"i id="main6" style="display: none;">
+        <div class="circle" id="tick">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Sky_Blue.png/1024px-Sky_Blue.png" alt=""  id="im1">
+        </div>
+        <h1 id="h1">Thanks For your Time</h1>
+        <p id="para">The form was successfully submitted</p>
+    </div>
+
+    
+        </div>
+       
+    </div>
+    
+    <script>
+      
+
+function jumpNext(params) {
+          let ra1=document.getElementById('n1');
+            let ra2=document.getElementById('n2');
+            let ra3=document.getElementById('n3');
+            let ra4=document.getElementById('n4');
+            
+            if (ra1.checked===true||ra2.checked===true||ra3.checked===true||ra4.checked===true){
+            document.getElementById("main1").style.display="none";
+            let ch=document.getElementById("main2").style.display="block";
+            document.getElementById("c1").style.background="green";
+            document.getElementById("k").style.borderColor="green";  
+            }
+            else{
+            
+                let p=document.createElement('p');
+                p.className="only"
+                p.innerText="Choose one correct option";
+               main1.appendChild(p)
+               
+            }
+          
+        }
+
+       
+    
+         
+        function jump(params) {
+
+            let radio1=document.getElementById('a1');
+            let radio2=document.getElementById('a2');
+            let radio3=document.getElementById('a3');
+            let radio4=document.getElementById('a4');
+
+            if (radio1.checked===true||radio2.checked===true||radio3.checked===true||radio4.checked===true) {
+            document.getElementById("main1").style.display='none';
+            document.getElementById("main2").style.display="none";
+            document.getElementById("main3").style.display="block"; 
+            document.getElementById("c2").style.background="green";
+            document.getElementById("k1").style.borderColor="green"
+            } else{
+                let p=document.createElement('p');
+                p.className="only"
+                p.innerText="Choose one correct option";
+                main2.appendChild(p)
+            }
+           
+        }
+
+        function jump1(params) {
+          
+            let checkbox1=document.getElementById('abc1');
+            let checkbox2=document.getElementById('abc2');
+            let checkbox3=document.getElementById('abc3');
+            let checkbox4=document.getElementById('abc4');
+             
+             
+        if (checkbox1.checked===true||checkbox2.checked===true||checkbox3.checked===true||checkbox4.checked===true) {
+            document.getElementById("main1").style.display='none';
+            document.getElementById("main2").style.display="none";
+            document.getElementById("main3").style.display="none"; 
+            document.getElementById("main4").style.display="block"; 
+            document.getElementById("c3").style.background="green";
+            document.getElementById("k2").style.borderColor="green"
+          
+        }  else{
+                let p=document.createElement('p');
+                p.className="only"
+                p.innerText="Choose one correct option";
+                main3.appendChild(p)
+            }
+   
+
+
+        }
+        function jump2(params) {
+
+            let r1=document.getElementById('b1');
+            let r2=document.getElementById('b2');
+            let r3=document.getElementById('b3');
+            let r4=document.getElementById('b4');
+            
+            if (r1.checked===true||r2.checked===true||r3.checked===true||r4.checked===true){
+            document.getElementById("main1").style.display='none';
+            document.getElementById("main2").style.display="none";
+            document.getElementById("main3").style.display="none"; 
+            document.getElementById("main4").style.display="none"; 
+            document.getElementById("main5").style.display="block"; 
+            document.getElementById("c4").style.background="green";
+            document.getElementById("k3").style.borderColor="green";
+            } else{
+                let p=document.createElement('p');
+                p.className="only1"
+                p.innerText="Choose one correct option";
+                main4.appendChild(p)
+            }
+        }
+
+
+
+
+        function returnn(params) {
+            document.getElementById("main1").style.display='block';
+            document.getElementById("main2").style.display='none';   
+            document.getElementById("c1").style.backgroundColor="white";
+            document.getElementById("k").style.borderColor="black";
+        }
+        function returnn1(params) {
+            document.getElementById("main2").style.display="block";
+            document.getElementById("main3").style.display="none"; 
+            document.getElementById("c2").style.backgroundColor="white";
+            document.getElementById("k1").style.borderColor="black";
+        }
+        function returnn2(params) {
+            document.getElementById("main3").style.display="block";
+            document.getElementById("main4").style.display="none"; 
+            document.getElementById("c3").style.backgroundColor="white";
+            document.getElementById("k2").style.borderColor="black";
+        }
+        function returnn3(params) {
+            document.getElementById("main4").style.display="block";
+            document.getElementById("main5").style.display="none"; 
+            document.getElementById("c4").style.backgroundColor="white";
+            document.getElementById("k3").style.borderColor="black";
+        }
+
+    </script>
+    <script>
+
+          function  formValidation()
+          {
+            let username=document.getElementById("username");
+        let mymail=document.getElementById("mymail");
+        let anyage=document.getElementById("anyage");
+        let country=document.getElementById("browser");
+            if(username.value=="")
+          {
+            document.getElementById('userError').innerHTML="Name is required"
+            
+           }
+           else if(mymail.value=="")
+           {
+            document.getElementById("userError1").innerHTML="Email is required";
+            document.getElementById("userError").innerText=" ";
+
+
+           }
+           else if(country.value=="")
+           {
+            document.getElementById("userError2").innerHTML="country is required";
+            document.getElementById("userError1").innerText=" ";
+            
+
+           }
+           else if (anyage.value=="")
+           {
+            document.getElementById("userError3").innerHTML="age is required";
+            document.getElementById("userError2").innerText=" ";
+
+
+           }
+           else{
+            document.getElementById("main5").style.display="none";
+     document.getElementById("main6").style.display="block";
+            
+    setTimeout(() => {
+    let veri=document.getElementById("im1").src="https://www.freeiconspng.com/thumbs/check-tick-icon/tick-icon-30.png";
+      }, 100);
+            document.getElementById("c5").style.background="green";
+            document.getElementById("k4").style.borderColor="green";
+
+           }
+
+           
+}
+
+    </script>
+   
+
+ 
+    
+</body>
+</html>

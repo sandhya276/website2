@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .op{
+            border: 1px solid;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+    <!-- <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: not-allowed;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+}
+
+button:enabled {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+p{
+    color: red;
+}
+
+input[type='radio']
+{
+    width: 30px;
+    height: 20px;
+    border-radius: 10px;
+}
+    </style> -->
+</head>
+<body>
+    <!-- <div class="quiz-container"  id="quiz-container">
+        <div class="question">What is the capital of France?</div>
+        <div class="options" id="options" >
+            <label>
+                <input type="radio" name="option" id="r1"> Paris
+               
+            </label>
+            <label>
+                <input type="radio" name="option" id="r2"> London
+            </label>
+            <label>
+                <input type="radio" name="option" id="r3"> Berlin
+            </label>
+            <label>
+                <input type="radio" name="option" id="r4"> Madrid
+            </label>
+        </div>
+        <button id="nextButton" onclick="next()">Next</button>
+    </div>
+    <script>
+        let add=document.getElementById("options")
+       function next(params) {
+        let s1=document.getElementById("r1");
+        let s2=document.getElementById("r2");
+        let s3=document.getElementById("r3");
+        let s4=document.getElementById("r4");
+
+        if(s1.checked==true||s2.checked==true||s3.checked==true||s4.checked==true)
+        {
+            document.getElementById('quiz-container').style.display="none";
+        }
+        else{
+            let p=document.createElement("p");
+            p.innerText="select option";
+            add.appendChild(p)
+        }       
+       }
+
+
+    </script> -->
+<div class="op" id="op">
+    <button id="b1">Never</button>
+    <button id="b2">1-2 year</button>
+    <button onclick="next()">next</button>
+</div>
+   
+    <script>
+        function next() {
+            let a1=document.getElementById('b1');
+            let a2=document.getElementById("b2");
+            if(a1.type==||a2.type==click)
+            {
+                document.getElementById("op").style.display='none'
+            }
+            else{
+             alert("not passed")
+            }
+            
+        }
+    </script>
+
+
+<div class="main1" id="main1">
+    <h1 id="question">1. How long have you know our Institute?</h1>
+    <button onclick="colorset()" id="btn" class="year">never</button>
+    <button onclick="colorset1()" id="btn1" class="year">0-1 year</button><br><br>
+    <button onclick="colorset2()" id="btn2" class="year">1-2 year</button>
+    <button onclick="colorset3()" id="btn3" class="year">> 5 year</button>
+<br><br><br>
+<button id="next" onclick="jumpNext()">Next</button>
+</div>
+<script>
+
+let store=document.getElementById("main1");
+        let cl=document.getElementById('btn1');
+        cl.addEventListener("click", (en) => {
+            if(en.type=="click")
+            {
+              let btn1=document.getElementById('btn1');
+              btn1.addEventListener("click",(e)=>{
+                if(e.type=="click"&&en.type=="click")
+                {
+                    jumpNext();
+                }
+              })
+            }
+            else{
+                alert("Please select")
+            }
+
+
+          
+});
+</script>
+</body>
+</html>
